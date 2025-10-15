@@ -1,11 +1,16 @@
 MyChatApplication - Project Report
 
 Project Title: MyChatApplication
+Source Code Link: https://github.com/DSwithSiam/MyChatApplication
+
 Team Leader: Md Masipul Islam Siam - 24205047
 Team Members:
-01. 
+01. Dolna Akter - 	24205049
+02. Sumaya Akter -	24205026
+03. Md. Moniruzzaman Sabuj -	24205032
+03. MD BOSIRUL ISLAM -	24205023
+05. Mosaraff fahim -	24205041
 
-Source Code Link: https://github.com/DSwithSiam/MyChatApplication
 
 1. Abstract
 This document describes the MyChatApplication project — a simple Java-based chat application containing a chat client and chat server. The report summarizes objectives, architecture, implementation details, how to build and run, testing notes, and possible enhancements.
