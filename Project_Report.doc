@@ -1,0 +1,92 @@
+MyChatApplication - Project Report
+
+Project Title: MyChatApplication
+Team Leader: Md Masipul Islam Siam - 24205047
+Team Members:
+01. 
+
+Source Code Link: https://github.com/DSwithSiam/MyChatApplication
+
+1. Abstract
+This document describes the MyChatApplication project — a simple Java-based chat application containing a chat client and chat server. The report summarizes objectives, architecture, implementation details, how to build and run, testing notes, and possible enhancements.
+
+2. Objectives
+- Implement a basic client-server chat application in Java.
+- Demonstrate use of sockets, threads, and simple GUI elements (if present).
+- Provide a working demo and documentation for evaluation.
+
+3. Project Structure
+The repository contains the following important files and folders:
+- build.xml (Ant build file)
+- src/ : Java source files
+  - src/chat/chat_client.java : Client implementation
+  - src/chat/chat_server.java : Server implementation
+- build/classes/chat/ : Generated compiled classes and form files
+- nbproject/ : NetBeans project metadata
+
+4. System Overview and Architecture
+The application follows a traditional client-server model:
+- Server: Listens on a TCP port for client connections, handles multiple clients (via threads), and forwards messages between connected clients or to a common chatroom.
+- Client: Connects to server, sends user messages, and receives broadcast messages from the server. The client may include a lightweight GUI.
+
+5. Key Features
+- Multiple clients can connect to a single server.
+- Real-time message broadcasting to connected clients.
+- Simple user input and message display.
+
+6. Implementation Notes
+- Language: Java
+- Build tool: Ant (build.xml provided), but can also compile using javac.
+- Networking: java.net.Socket and ServerSocket are used for communication.
+- Concurrency: Each client connection is typically handled in a separate thread on the server.
+
+7. How to build and run locally
+Option A — Using Ant (recommended if Ant is installed):
+
+1) From the project root, run the Ant build:
+
+   ant
+
+2) Run the server (example):
+
+   java -cp build/classes chat.chat_server
+
+3) Run the client (example):
+
+   java -cp build/classes chat.chat_client
+
+Option B — Using javac directly:
+
+1) Compile sources:
+
+   javac -d build/classes src/chat/*.java
+
+2) Start server:
+
+   java -cp build/classes chat.chat_server
+
+3) Start client(s):
+
+   java -cp build/classes chat.chat_client
+
+Notes:
+- If the code expects command-line arguments (host, port), pass them accordingly. If you open the source, check `main` method signatures in `chat_client.java` and `chat_server.java`.
+- If the project uses NetBeans forms, you may need to run from the IDE for a GUI to work correctly.
+
+8. Testing
+- Manual testing: start server, connect multiple clients, send messages, verify broadcast and disconnection handling.
+- Edge cases to verify: abrupt client disconnect, invalid input, large messages, and port-in-use errors.
+
+9. Known Limitations and Enhancements
+- No encryption/authentication — messages are plaintext; add SSL/TLS or authentication for production.
+- Limited error handling — improve robustness and resource cleanup.
+- Add persistent chat history/storage and a nicer GUI.
+
+10. Conclusion
+MyChatApplication demonstrates core networking and concurrency concepts in Java. The codebase provides a solid starting point for communication features and can be extended with security, persistence, and richer UI.
+
+Appendix A: Quick pointers to source
+- `src/chat/chat_client.java` : client entry and UI (if any)
+- `src/chat/chat_server.java` : server entry and connection handling
+
+If you want this file converted to a true Word `.docx` file, localized to Bangla, or formatted with screenshots and code snippets, tell me which option you prefer and I will convert or enhance it.
