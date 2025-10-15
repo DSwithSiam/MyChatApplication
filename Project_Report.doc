@@ -90,8 +90,3 @@ Notes:
 10. Conclusion
 MyChatApplication demonstrates core networking and concurrency concepts in Java. The codebase provides a solid starting point for communication features and can be extended with security, persistence, and richer UI.
 
-Appendix A: Quick pointers to source
-- `src/chat/chat_client.java` : client entry and UI (if any)
-- `src/chat/chat_server.java` : server entry and connection handling
-
-If you want this file converted to a true Word `.docx` file, localized to Bangla, or formatted with screenshots and code snippets, tell me which option you prefer and I will convert or enhance it.
